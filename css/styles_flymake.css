@@ -19373,32 +19373,32 @@ ol.ui.horizontal.list li:before,
   opacity: 0.8;
 }
 
-/* line 4, ../_sass/styles.scss */
+/* line 4, ../_sass/styles_flymake.scss */
 html, body {
   background: white;
   color: #3f3f3f;
   font-family: 'Exo 2', sans-serif;
 }
 
-/* line 10, ../_sass/styles.scss */
+/* line 10, ../_sass/styles_flymake.scss */
 body {
   border-top: 3px solid #ee7044;
 }
 
-/* line 14, ../_sass/styles.scss */
+/* line 14, ../_sass/styles_flymake.scss */
 a {
   text-decoration: none;
   color: yellow;
 }
 
-/* line 20, ../_sass/styles.scss */
+/* line 20, ../_sass/styles_flymake.scss */
 .post code {
   border-radius: 3px;
   background-color: #eeeeec;
   padding: 0.1em 0.2em;
 }
 
-/* line 26, ../_sass/styles.scss */
+/* line 26, ../_sass/styles_flymake.scss */
 .post pre {
   border-radius: 3px;
   background-color: #eeeeec;

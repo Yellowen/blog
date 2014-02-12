@@ -1,1 +1,30 @@
 @import 'semantic-ui';
+@import 'variables';
+
+html, body {
+  background: $BG;
+  color: $darkgray;
+  font-family: 'Exo 2', sans-serif;
+}
+
+body {
+  border-top: 3px solid $orange;
+}
+
+a {
+  text-decoration: none;
+  color: yellow;
+}
+
+
+.post code {
+  border-radius: 3px;
+  background-color: #eeeeec;
+  padding: 0.1em 0.2em;
+}
+
+.post pre {
+  border-radius: 3px;
+  background-color: #eeeeec;
+  padding: 0.2em;
+}

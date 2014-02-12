@@ -3,11 +3,14 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+{% for post in site.posts %}
+<div class="post row">
+  <div class="ui segment">
+
+    <h1><img class="ui avatar image" src="/images/demo/photo2.jpg"> <a href="{{ post.url }}">{{ post.title }}</a></h1>
+
+    <p>{{ post.content | truncatewords:75}}</p>
+    <div class="ui teal bottom right attached  label"><i class="large time icon"></i>{{ post.date | date_to_string }}</div>
+  </div>
 </div>
+{% endfor %}
