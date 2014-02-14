@@ -1,5 +1,7 @@
 @import 'semantic-ui';
 @import 'variables';
+@import "compass/css3/shared";
+@import "compass/css3";
 
 html, body {
   background: $BG;
@@ -8,15 +10,54 @@ html, body {
 }
 
 body {
-  border-top: 3px solid $orange;
+  border-top: 3px solid $gray;
 }
 
+.header {
+  background: url("/images/header.png") 0 0 repeat-x transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  display: block;
+}
 a {
   text-decoration: none;
-  color: yellow;
+  color: $linkColor;
+  @include transition(color 300ms linear 0ms);
+
+  &:visited, &:active {
+    color: $visitedLinkColor;
+    @include transition(color 300ms linear 0ms);
+
+  }
+  &:hover {
+    @include transition(color 300ms linear 0ms);
+    color: $hoverColor;
+  }
+
 }
 
+.center-image {
+  margin: 1em auto;
 
+}
+
+.brand {
+
+  padding-top: 8em;
+  border-right: 1px dotted #d9d9d9;
+  h1 {
+    font-size: 1.3em;
+  }
+}
+
+.post {
+  .post-title {
+    font-size: 1.6em;
+  }
+}
 .post code {
   border-radius: 3px;
   background-color: #eeeeec;
