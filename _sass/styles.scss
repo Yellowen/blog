@@ -10,7 +10,11 @@ html, body {
 }
 
 body {
-  border-top: 3px solid $gray;
+  //border-top: 3px solid $gray;
+}
+
+.ui.menu {
+  border-radius: 0;
 }
 
 .header {

@@ -15,73 +15,55 @@
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-    <div class="header1"></div>
 
-    <br />
+    <div class="ui thin sidebar small vertical menu">
+      <div class="header item">
+        Blog
+      </div>
+        <a class="active item" href="/"><i class="home icon"></i> Home</a>
+        <div class="ui left pointing dropdown item">
+          Categories <i class="dropdown icon"></i>
+          <div class="menu">
+            {% for cat in site.categories %}
+            <a href="#" class="item">{{ cat[0] }}</a>
+            {% endfor %}
+          </div>
+        </div>
 
-    <div class="ui page grid">
-  <div class="row">
-    <div class="column">
+    </div>
 
 
-<div class="ui small menu">
-  <a class="active item">
-    <i class="home icon"></i> Home
-  </a>
-    <div class="ui dropdown item">
-      Categories <i class="dropdown icon"></i>
-      <div class="menu">
-        <a class="item">English</a>
-        <a class="item">Russian</a>
-        <a class="item">Spanish</a>
+    <div class="ui grid">
+      <div class="ui fluid small inverted menu">
+        <div class="active item">
+          <a href="#" class="toggle button"><i class="reorder icon"></i> Blog</a>
+        </div>
+
+        <div class="right menu">
+          <div class="ui dropdown item">
+            Follow us <i class="dropdown icon"></i>
+            <div class="menu">
+              <a class="item" href="#"><i class="twitter sign icon"></i> Twitter</a>
+              <a class="item" href="#"><i class="github icon"></i> Github</a>
+              <a class="item" href="#"><i class="facebook sign icon"></i> Facebook</a>
+              <a class="item" href="#"><i class="google plus sign icon"></i> Google+</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-  <div class="right menu">
-    <a class="item" href="#"><i class="twitter sign icon"></i></a>
-    <a class="item" href="#"><i class="github icon"></i></a>
-    <a class="item" href="#"><i class="facebook sign icon"></i></a>
-    <a class="item" href="#"><i class="google plus sign icon"></i></a>
-
-  </div>
-</div>
-
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
 
 
 
     <div class="ui one column page grid">
       <div class="column">
         <div class="row">
-
           <div class="stackable ui grid">
-
-
-            <div class="three wide center aligned fixed column brand">
-              <h1>Yellowen Blog</h1>
-
-            </div>
-
-            <div class="one wide column"></div>
-            <div class="twelve wide column">
+            <div class="column">
               {{ content }}
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
 
@@ -89,8 +71,11 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="/javascripts/semantic-ui/transition.js"></script>
     <script type="text/javascript" src="/javascripts/semantic-ui/dropdown.js"></script>
+    <script type="text/javascript" src="/javascripts/semantic-ui/sidebar.js"></script>
+
     <script>
       $(".ui.dropdown").dropdown();
+      $(".ui.sidebar").sidebar('attach events', '.toggle.button');
     </script>
   </body>
 </html>
