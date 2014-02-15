@@ -9,7 +9,8 @@ rss_name: feed.xml
 rss_post_limit: 10
 tag_page_layout: tag_page
 tag_page_dir: tag
-
+lsi: true
+paginate: 1
 authors:
   lxsameer:
     name: Sameer Rahmani
