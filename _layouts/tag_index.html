@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="ui center aligned grid">
+  <div class="column">
+    <div class="ui segment">
+      <h1>Tag Cloud</h1>
+      {% tag_cloud %}
+    </div>
+  </div>
+</div>
+{% comment %}
+<ul>{% for tag in site.tags %}
+  <li><a href="/tag/{{ tag[0] }}">{{ tag[0] }}</a> <span>{{ tag[1].size }}</span></li>{% endfor %}
+</ul>
+{% endcomment %}

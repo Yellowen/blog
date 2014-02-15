@@ -138,3 +138,12 @@ footer {
     font-size: 1.4em;
   }
 }
+
+.invert-link, .invert-link:active, .invert-link:visited {
+  color: #ddd;
+  @include text-shadow(0 1px 1px #777);
+}
+
+.invert-link:hover {
+  color: white !important;
+}

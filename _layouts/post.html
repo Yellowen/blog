@@ -33,11 +33,11 @@ layout: default
   <div class="ui bottom attached black inverted segment">
     <div class="ui two column grid">
       <div class="column fsegment">
-        <i class="block layout icon"></i> {% for cat in page.categories %}{{ cat | downcase | capitalize }} {% endfor %}
+        <i class="block layout icon"></i> {% for cat in page.categories %}<a class="invert-link" href="/categories/{{ cat }}">{{ cat | downcase | capitalize }}</a> {% endfor %}
 
       </div>
       <div class="right aligned column fsegment">
-        <i class="tags icon"></i>  {% for tag in page.tags %}{{ tag | downcase | capitalize }} {% endfor %}
+        <i class="tags icon"></i>  {% for tag in page.tags %}<a class="invert-link" href="/tags/{{ tag }}">{{ tag | downcase | capitalize }}</a> {% endfor %}
 
 
       </div>

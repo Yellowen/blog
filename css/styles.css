@@ -19524,3 +19524,14 @@ footer .column span a {
 .author h1 {
   font-size: 1.4em;
 }
+
+/* line 142, ../_sass/styles.scss */
+.invert-link, .invert-link:active, .invert-link:visited {
+  color: #ddd;
+  text-shadow: 0 1px 1px #777777;
+}
+
+/* line 147, ../_sass/styles.scss */
+.invert-link:hover {
+  color: white !important;
+}
