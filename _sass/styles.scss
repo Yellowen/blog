@@ -100,8 +100,41 @@ a {
 
 footer {
   width: 100%;
-  height: 5em;
+  position: static;
+  bottom: 0;
   background: #333;
   color: #eee;
   margin-top: 5em;
+
+  .column {
+    padding: 0.5em 0;
+    h1 {
+      margin-bottom: 0 !important;
+    }
+    span {
+      font-size: 0.7em !important;
+      color: #b9b9b9 !important;
+      a {
+        color: white;
+      }
+    }
+
+  }
+
+}
+
+.ui.label {
+  text-transform: capitalize;
+}
+
+.fsegment {
+  font-size: 0.8rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.author {
+  h1 {
+    font-size: 1.4em;
+  }
 }

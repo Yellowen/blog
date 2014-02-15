@@ -19381,12 +19381,30 @@ html, body {
 }
 
 /* line 16, ../_sass/styles_flymake.scss */
+.sidebar {
+  text-align: left;
+}
+
+/* line 21, ../_sass/styles_flymake.scss */
+.left-header h1 {
+  font-size: 1.6em;
+}
+/* line 24, ../_sass/styles_flymake.scss */
+.left-header h2 {
+  font-size: 1.4em;
+}
+/* line 27, ../_sass/styles_flymake.scss */
+.left-header p {
+  font-size: 1.2;
+}
+
+/* line 35, ../_sass/styles_flymake.scss */
 .ui.menu {
   border-radius: 0;
 }
 
-/* line 20, ../_sass/styles_flymake.scss */
-.header {
+/* line 39, ../_sass/styles_flymake.scss */
+.header-bg {
   background: url("/images/header.png") 0 0 repeat-x transparent;
   position: absolute;
   top: 0;
@@ -19396,65 +19414,113 @@ html, body {
   display: block;
 }
 
-/* line 29, ../_sass/styles_flymake.scss */
+/* line 48, ../_sass/styles_flymake.scss */
 a {
   text-decoration: none;
-  color: #37465d;
+  color: #006699;
   -webkit-transition: color 300ms linear;
   -webkit-transition-delay: 0ms;
   -moz-transition: color 300ms linear 0ms;
   -o-transition: color 300ms linear 0ms;
   transition: color 300ms linear 0ms;
 }
-/* line 34, ../_sass/styles_flymake.scss */
+/* line 53, ../_sass/styles_flymake.scss */
 a:visited, a:active {
-  color: #37465d;
+  color: #006699;
   -webkit-transition: color 300ms linear;
   -webkit-transition-delay: 0ms;
   -moz-transition: color 300ms linear 0ms;
   -o-transition: color 300ms linear 0ms;
   transition: color 300ms linear 0ms;
 }
-/* line 39, ../_sass/styles_flymake.scss */
+/* line 58, ../_sass/styles_flymake.scss */
 a:hover {
   -webkit-transition: color 300ms linear;
   -webkit-transition-delay: 0ms;
   -moz-transition: color 300ms linear 0ms;
   -o-transition: color 300ms linear 0ms;
   transition: color 300ms linear 0ms;
-  color: #006699;
+  color: #37465d;
 }
 
-/* line 46, ../_sass/styles_flymake.scss */
+/* line 65, ../_sass/styles_flymake.scss */
 .center-image {
   margin: 1em auto;
 }
 
-/* line 51, ../_sass/styles_flymake.scss */
+/* line 70, ../_sass/styles_flymake.scss */
 .brand {
   padding-top: 8em;
   border-right: 1px dotted #d9d9d9;
 }
-/* line 55, ../_sass/styles_flymake.scss */
+/* line 74, ../_sass/styles_flymake.scss */
 .brand h1 {
   font-size: 1.3em;
 }
 
-/* line 61, ../_sass/styles_flymake.scss */
+/* line 79, ../_sass/styles_flymake.scss */
+.post {
+  line-height: 1.5;
+}
+/* line 81, ../_sass/styles_flymake.scss */
 .post .post-title {
   font-size: 1.6em;
 }
 
-/* line 65, ../_sass/styles_flymake.scss */
+/* line 85, ../_sass/styles_flymake.scss */
 .post code {
   border-radius: 3px;
   background-color: #eeeeec;
   padding: 0.1em 0.2em;
 }
 
-/* line 71, ../_sass/styles_flymake.scss */
+/* line 91, ../_sass/styles_flymake.scss */
 .post pre {
   border-radius: 3px;
   background-color: #eeeeec;
   padding: 0.2em;
+}
+
+/* line 101, ../_sass/styles_flymake.scss */
+footer {
+  width: 100%;
+  position: static;
+  bottom: 0;
+  background: #333;
+  color: #eee;
+  margin-top: 5em;
+}
+/* line 109, ../_sass/styles_flymake.scss */
+footer .column {
+  padding: 0.5em 0;
+}
+/* line 111, ../_sass/styles_flymake.scss */
+footer .column h1 {
+  margin-bottom: 0 !important;
+}
+/* line 114, ../_sass/styles_flymake.scss */
+footer .column span {
+  font-size: 0.7em !important;
+  color: #b9b9b9 !important;
+}
+/* line 117, ../_sass/styles_flymake.scss */
+footer .column span a {
+  color: white;
+}
+
+/* line 126, ../_sass/styles_flymake.scss */
+.ui.label {
+  text-transform: capitalize;
+}
+
+/* line 130, ../_sass/styles_flymake.scss */
+.fsegment {
+  font-size: 0.8rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* line 137, ../_sass/styles_flymake.scss */
+.author h1 {
+  font-size: 1.4em;
 }

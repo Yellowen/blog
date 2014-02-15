@@ -1,16 +1,78 @@
 ---
 layout: default
 ---
+{% assign author = site.authors[page.author] %}
 <div class="post row">
-  <div class="ui segment">
+  <div class="ui top attached segment">
 
-    <h1 class="post-title"><img class="ui avatar image" src="{{ 'lxsameer@gnu.org' | to_gravatar }}"> <a href="{{ post.url }}">{{ page.title }}</a></h1>
+    <h1 class="post-title"><a href="{{ post.url }}">{{ page.title }}</a></h1>
     <div class="ui teal top right attached  label"><i class="large time icon"></i>{{ page.date | date_to_string }}</div>
 
     <div class="post">
       {{ content }}
     </div>
 
+    <div class="ui grid">
+      <div class="right aligned row">
+        <div class="column">
+          <div class="ui tiny orange labeled icon top right pointing dropdown button">
+            <i class="share icon"></i>
+            <span class="text">Share</span>
+            <div class="menu">
+              <div class="item"><a href="#" class=""><i class="large twitter sign icon"></i> Twitter</a></div>
+              <div class="item"><a href="#" class=""><i class="large facebook sign icon"></i> Facebook</a></div>
+              <div class="item"><a href="#" class=""><i class="large linkedin sign icon"></i> Linkedin</a></div>
+              <div class="item"><a href="#" class=""><i class="large google plus sign icon"></i> Google+</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="ui bottom attached black inverted segment">
+    <div class="ui two column grid">
+      <div class="column fsegment">
+        <i class="block layout icon"></i> {% for cat in page.categories %}{{ cat | downcase | capitalize }} {% endfor %}
+
+      </div>
+      <div class="right aligned column fsegment">
+        <i class="tags icon"></i>  {% for tag in page.tags %}{{ tag | downcase | capitalize }} {% endfor %}
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<br />
+<div class="row author">
+  <div class="ui {{ author.color }} segment">
+    <h1><img class="ui mini circular image" src="{{ author.email | to_gravatar }}" title="{{ author.name }}" style="display: inline;"> {{ author.display_name }}</h1>
+    <div class="ui top right attached {{ author.color }}  label">About Author</div>
+    <p>{{ author.about }}</p>
+    <div class="ui grid"><div class="row"><div class="right aligned column">
+          <a href="{{ author.web }}"><i class="large globe icon"></i></a>  <a href="http://twitter.com/{{ author.twitter }}"><i class="large twitter icon"></i></a> <a href="http://github.com/{{ author.github }}"><i class="large github icon"></i></a>
+    </div></div></div>
+  </div>
+</div>
+
+<br /><br />
+<div class="row comment">
+  <div class="ui segment">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'yellowenblog'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   </div>
 </div>

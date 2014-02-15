@@ -1,3 +1,32 @@
-name: Your New Jekyll Site
+name: Yellowen Blog
 markdown: redcarpet
 pygments: true
+url: http://blog.yellowen.com
+description: A publication about business, design, programming, writing, and the web by Yellowen people.
+copyright: copyright 2013-2014 Yellowen Inc
+rss_path: /feed
+rss_name: feed.xml
+rss_post_limit: 10
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+authors:
+  lxsameer:
+    name: Sameer Rahmani
+    display_name: lxsameer
+    gravatar: c
+    email: lxsameer@gnu.org
+    web: http://www.lxsameer.com
+    twitter: lxsameer
+    github: lxsameer
+    color: orange
+    about: He is as dfs sdf sdf
+  yottanami:
+    name: Behnam Ahmad Khan Beigi
+    display_name: yottanami
+    gravatar: c
+    email: b3hnam@yellowen.com
+    web: http://yottanami.com
+    twitter: yottanami
+    github: yottanami
+    color: green

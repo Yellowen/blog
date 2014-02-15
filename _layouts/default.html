@@ -18,12 +18,9 @@
 
     <div class="ui thin sidebar small vertical menu">
       <div class="header item">
-        Categories
+        <a href="/categories">Categories</a>
       </div>
-
-      {% for cat in site.categories %}
-      <a href="#" class="item"><div class="ui purple circular label">34</div> {{ cat[0] }}</a>
-      {% endfor %}
+      {% category_list %}
     </div>
 
 
@@ -43,6 +40,7 @@
             </div>
           </div>
         <div class="right menu">
+          <a class="item" href="/feed/feed.xml"><i class="rss icon"></i></a>
         </div>
       </div>
     </div>
@@ -61,15 +59,13 @@
       </div>
     </div>
 
-
     <footer>
-      <div class="ui middle aligned two column page grid">
+      <div class="ui two column page grid">
         <div class="row">
           <div class="column left aligned">
-            <h1>Yellowen Inc</h1>
+            <span>© 2013-2014 <a class="invert" href="http://www.yellowen.com">Yellowen Inc</a></span>
           </div>
           <div class="column right aligned">
-            some
           </div>
         </div>
       </div>
