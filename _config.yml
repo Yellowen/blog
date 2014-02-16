@@ -9,7 +9,7 @@ rss_name: feed.xml
 rss_post_limit: 10
 tag_page_layout: tag_page
 tag_page_dir: tag
-lsi: true
+lsi: false
 paginate: 10
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile']
 
@@ -23,7 +23,7 @@ authors:
     twitter: lxsameer
     github: lxsameer
     color: orange
-    about: He is as dfs sdf sdf
+    about: A Bad-ass developer who loves programming and enjoy learning new stuff.
   yottanami:
     name: Behnam Ahmad Khan Beigi
     display_name: yottanami

@@ -2,11 +2,13 @@
 layout: home
 title: Yellowen Blog
 ---
+
 {% for post in paginator.posts %}
+{% assign author = site.authors[post.author] %}
 <div class="post row">
   <div class="ui segment">
     <br class="mobile only"/>
-    <h1 class="post-title"><img class="ui avatar image" src="{{ 'lxsameer@gnu.org' | to_gravatar }}"> <a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <h1 class="post-title"><a href="/authors/{{ author.display_name }}/"><img class="ui avatar image" src="{{ author.email | to_gravatar }}" title="{{ author.display_name }}"></a> <a href="{{ post.url }}">{{ post.title }}</a></h1>
     <div class="ui teal top right attached  label"><i class="large time icon"></i>{{ post.date | date_to_string }}</div>
     <p>{{ post.excerpt }}</p>
 
