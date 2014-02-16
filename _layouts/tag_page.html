@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="ui two column grid">
+<div class="ui stackable two column grid">
   <div class="header four wide center aligned column left-header">
     <div class="ui green inverted segment">
       <h1>Tag: {{ page.tag }}</h1>
@@ -15,6 +15,7 @@ layout: default
     {% if tag == page.tag %}
     <div class="post row">
       <div class="ui segment">
+        <br class="mobile only"/>
         <h1 class="post-title"><img class="ui avatar image" src="{{ 'lxsameer@gnu.org' | to_gravatar }}"> <a href="{{ post.url }}">{{ post.title }}</a></h1>
         <div class="ui teal top right attached  label"><i class="large time icon"></i>{{ post.date | date_to_string }}</div>
         <p>{{ post.excerpt | markdownify }}</p>

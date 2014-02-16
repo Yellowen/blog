@@ -9,3 +9,5 @@ task :deploy do
   system("git push origin gh-pages -f")
   system("git checkout master")
 end
+
+task :default => :deploy
