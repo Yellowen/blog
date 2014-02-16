@@ -12,7 +12,7 @@ tag_page_dir: tag
 lsi: true
 paginate: 1
 
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile']
 
 authors:
   lxsameer:
