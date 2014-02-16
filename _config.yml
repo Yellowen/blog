@@ -11,6 +11,9 @@ tag_page_layout: tag_page
 tag_page_dir: tag
 lsi: true
 paginate: 1
+
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+
 authors:
   lxsameer:
     name: Sameer Rahmani
