@@ -150,3 +150,13 @@ footer {
 .invert-link:hover {
   color: white !important;
 }
+
+blockquote {
+  background: $BG;
+  border-radius: 3px;
+  border: 1px solid $lightergray;
+  p {
+    padding: 0.2em 0.4em !important;
+    font-size: 0.9em;
+  }
+}

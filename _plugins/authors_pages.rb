@@ -1,8 +1,25 @@
-require "pry"
 require 'ostruct'
 
 
 module Jekyll
+
+  class Author
+    def initialize(hash)
+      @hash = hash
+    end
+
+    def method_missing(method, *args, &block)
+      if @hash.include? method.to_sym
+        return @hash[method.to_sym]
+      end
+      super
+    end
+
+    def to_liquid
+      @hash
+    end
+  end
+
   class AuthorIndexPage < Page
     def initialize(site, base, dir, author)
       @site = site
@@ -39,12 +56,9 @@ module Jekyll
       new_authors = []
       authors.each do |author, attrs|
         vars = Hash[attrs.map{ |k, v| [k.to_sym, v] }]
-        tmp = OpenStruct.new
-        tmp.marshal_load(vars)
-        puts ">>>>>>>>>> ", tmp.color
+        tmp = Author.new(vars)
         new_authors << tmp
       end
-      puts ">>> ", new_authors.to_json
       self.data['authors'] = new_authors
 
       self.data['title'] = "Authors"

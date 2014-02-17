@@ -20,10 +20,10 @@ layout: default
             <i class="share icon"></i>
             <span class="text">Share</span>
             <div class="menu">
-              <div class="item"><a href="#" class=""><i class="large twitter sign icon"></i> Twitter</a></div>
-              <div class="item"><a href="#" class=""><i class="large facebook sign icon"></i> Facebook</a></div>
-              <div class="item"><a href="#" class=""><i class="large linkedin sign icon"></i> Linkedin</a></div>
-              <div class="item"><a href="#" class=""><i class="large google plus sign icon"></i> Google+</a></div>
+              <div class="item"><a href="https://twitter.com/intent/tweet?source=Yellowen_inc&text={{ page.title | cgi_escape }}&url={{ site.url | cgi_escape }}{{ page.url |  cgi_escape }}" class=""><i class="large twitter sign icon"></i> Twitter</a></div>
+              <div class="item"><a href="http://www.facebook.com/sharer.php?u={{ site.url | cgi_escape }}{{ page.url |  cgi_escape }}&t={{ page.title | cgi_escape }}" class=""><i class="large facebook sign icon"></i> Facebook</a></div>
+              <div class="item"><a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url | cgi_escape }}{{ page.url |  cgi_escape }}&title={{ page.title | cgi_escape }}&{% if page.description %}summary={{ page.description | cgi_escape }}&{% endif %}source={{ site.name | cgi_escape }}" class=""><i class="large linkedin sign icon"></i> Linkedin</a></div>
+              <div class="item"><a href="https://plus.google.com/share?text={{ page.title | cgi_escape }}&url={{ site.url | cgi_escape }}{{ page.url |  cgi_escape }}" class=""><i class="large google plus sign icon"></i> Google+</a></div>
             </div>
           </div>
         </div>
@@ -34,11 +34,11 @@ layout: default
   <div class="ui bottom attached black inverted segment">
     <div class="ui two column grid">
       <div class="column fsegment">
-        <i class="block layout icon"></i> {% for cat in page.categories %}<a class="invert-link" href="/categories/{{ cat }}">{{ cat | downcase | capitalize }}</a> {% endfor %}
+        <i class="block layout icon" title="Categories"></i> {% for cat in page.categories %}<a class="invert-link" href="/categories/{{ cat }}">{{ cat | downcase | capitalize }}</a> {% endfor %}
 
       </div>
       <div class="right aligned column fsegment">
-        <i class="tags icon"></i>  {% for tag in page.tags %}<a class="invert-link" href="/tags/{{ tag }}">{{ tag | downcase | capitalize }}</a> {% endfor %}
+        <i class="tags icon" title="Tags"></i>  {% for tag in page.tags %}<a class="invert-link" href="/tags/{{ tag }}">{{ tag | downcase | capitalize }}</a> {% endfor %}
 
 
       </div>
@@ -51,7 +51,7 @@ layout: default
   <div class="ui {{ author.color }} segment">
     <h1><img class="ui mini circular image" src="{{ author.email | to_gravatar }}" title="{{ author.name }}" style="display: inline;"> {{ author.display_name }}</h1>
     <div class="ui top right attached {{ author.color }}  label">About Author</div>
-    <p>{{ author.about }}</p>
+    <p>{{ author.about | markdownify}}</p>
     <div class="ui grid"><div class="row"><div class="right aligned column">
           <a href="{{ author.web }}"><i class="large globe icon"></i></a>  <a href="http://twitter.com/{{ author.twitter }}"><i class="large twitter icon"></i></a> <a href="http://github.com/{{ author.github }}"><i class="large github icon"></i></a>
     </div></div></div>
