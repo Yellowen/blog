@@ -19555,3 +19555,9 @@ blockquote p {
   padding: 0.2em 0.4em !important;
   font-size: 0.9em;
 }
+
+/* line 163, ../_sass/styles_flymake.scss */
+.ohloh {
+  display: inline-block;
+  padding-top: 0.2em;
+}

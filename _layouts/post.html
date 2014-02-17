@@ -4,7 +4,7 @@ layout: default
 
 {% assign author = site.authors[page.author] %}
 <div class="post row">
-  <div class="ui top attached segment">
+  <div class="ui teal top attached segment">
     <br class="mobile only"/>
     <h1 class="post-title"><a href="{{ post.url }}">{{ page.title }}</a></h1>
     <div class="ui teal top right attached  label"><i class="large time icon"></i>{{ page.date | date_to_string }}</div>
@@ -52,8 +52,30 @@ layout: default
     <h1><img class="ui mini circular image" src="{{ author.email | to_gravatar }}" title="{{ author.name }}" style="display: inline;"> {{ author.display_name }}</h1>
     <div class="ui top right attached {{ author.color }}  label">About Author</div>
     <p>{{ author.about | markdownify}}</p>
-    <div class="ui grid"><div class="row"><div class="right aligned column">
-          <a href="{{ author.web }}"><i class="large globe icon"></i></a>  <a href="http://twitter.com/{{ author.twitter }}"><i class="large twitter icon"></i></a> <a href="http://github.com/{{ author.github }}"><i class="large github icon"></i></a>
+    <div class="ui two column grid">
+      <div class="row">
+
+        <div class="column">
+          {% if author.ohloh %}
+          <span class="ohloh">
+          {{ author.ohloh }}
+          </span>
+          {% endif %}
+        </div>
+
+        <div class="right aligned column">
+          {% if author.web %}
+          <a href="{{ author.web }}"><i class="large globe icon"></i></a>
+          {% endif %}
+          {% if author.twitter %}
+          <a href="http://twitter.com/{{ author.twitter }}"><i class="large twitter icon"></i></a>
+          {% endif %}
+          {% if author.github %}
+          <a href="http://github.com/{{ author.github }}"><i class="large github icon"></i></a>
+          {% endif %}
+          {% if author.linkedin %}
+          <a href="{{ author.linkedin }}"><i class="large linkedin icon"></i></a>
+          {% endif %}
     </div></div></div>
   </div>
 </div>
