@@ -18,9 +18,34 @@ layout: default
         <h1><a href="/authors/{{ author[1].display_name }}"><img class="ui mini circular image" src="{{ author[1].email | to_gravatar }}" title="{{ author[1].name }}" style="display: inline;"> {{ author[1].display_name }}</a></h1>
         <div class="ui top right attached {{ author[1].color }}  label">About Author</div>
         <p>{{ author[1].about | markdownify }}</p>
-        <div class="ui grid"><div class="row"><div class="right aligned column">
-              <a href="{{ author[1].web }}"><i class="large globe icon"></i></a>  <a href="http://twitter.com/{{ author[1].twitter }}"><i class="large twitter icon"></i></a> <a href="http://github.com/{{ author[1].github }}"><i class="large github icon"></i></a>
-        </div></div></div>
+        <div class="ui two column grid">
+
+          <div class="row">
+
+            <div class="column">
+              {% if author[1].ohloh %}
+              <span class="ohloh">
+                {{ author[1].ohloh }}
+              </span>
+              {% endif %}
+            </div>
+
+            <div class="right aligned column">
+              {% if author[1].web %}
+              <a href="{{ author[1].web }}"><i class="large globe icon"></i></a>
+              {% endif %}
+              {% if author[1].twitter %}
+              <a href="http://twitter.com/{{ author[1].twitter }}"><i class="large twitter icon"></i></a>
+              {% endif %}
+              {% if author[1].github %}
+              <a href="http://github.com/{{ author[1].github }}"><i class="large github icon"></i></a>
+              {% endif %}
+              {% if author[1].linkedin %}
+              <a href="{{ author[1].linkedin }}"><i class="large linkedin icon"></i></a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
