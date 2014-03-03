@@ -3,7 +3,7 @@ layout: post
 title: Rapid Prototyping by Faalis
 date: 2014-03-03 09:15
 categories: Ruby Rails
-tags: i18n Faalis
+tags: Gem Faalis
 author: lxsameer
 description: Create web application in a blink using Ruby on Rails and Faalis
 ---
