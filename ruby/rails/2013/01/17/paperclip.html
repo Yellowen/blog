@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="google-site-verification" content="M7RFG3ID9oMF5lZOUkKAmzJxPzCSF9vDg9cnLCjjMig" />
+    
+    <title>Paperclip</title>
+    
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="twitter:card" content="A publication about business, design, programming, writing, and the web by Yellowen people.">
+    <meta name="twitter:site" content="@Yellowen_inc">
+    <meta name="twitter:creator" content="@Yellowen_inc">
+
+    
+    <meta name="twitter:title" content="Paperclip">
+    
+    
+    <meta name="twitter:url" content="http://blog.yellowen.com/ruby/rails/2013/01/17/paperclip.html">
+    
+    
+    <meta name="twitter:description" content="Paperclip another awesome gem for managing media">
+    
+    
+    <meta name="twitter:image:src" content="http://blog.yellowen.com/images/logo.png">
+    
+
+
+    <meta content="" property="og:site_name">
+    
+    <meta content="Paperclip" property="og:title">
+    
+    
+    <meta content="article" property="og:type">
+    
+    
+    <meta content="Paperclip another awesome gem for managing media" property="og:description">
+    
+    
+    <meta content="http://blog.yellowen.com/ruby/rails/2013/01/17/paperclip.html" property="og:url">
+    
+    
+    <meta content="2013-01-17T03:33:00+03:30" property="article:published_time">
+    <meta content="http://blog.yellowen.com/about/" property="article:author">
+    
+    
+    <meta content="http://blog.yellowen.com/images/high-logo.png" property="og:image">
+    
+    
+    
+    <meta content="ruby" property="article:section">
+    
+    
+    
+    
+    <meta content="Gems" property="article:tag">
+    
+    
+
+
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/tango.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,700' rel='stylesheet' type='text/css'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+
+    <div class="ui computer tablet only thin sidebar small vertical menu">
+      <div class="header item">
+        <a href="/categories"><i class="reorder icon"></i> Categories</a>
+      </div>
+      <a href='/categories/python/' class='item'><div class='ui black circular label'>1</div> Python</a>
+<a href='/categories/rails/' class='item'><div class='ui purple circular label'>4</div> Rails</a>
+<a href='/categories/ruby/' class='item'><div class='ui black circular label'>4</div> Ruby</a>
+
+      <div class="header item">
+        <a href="/tags"><i class="tags icon"></i> Tags</a>
+      </div>
+
+    </div>
+
+
+    <div class="ui mobile only thin left  sidebar  wide floating vertical menu">
+      <div class="item"><a href="/"><i class="home icon"></i> Home</a></div>
+      <div class="item"><a href="/categories"><i class="reorder icon"></i> Categories</a></div>
+      <div class="item"><a href="/tags"><i class="tags icon"></i> Tags</a></div>
+      <div class="item"><a href="/authors"><i class="users icon"></i> Authors</a></div>
+      <div class="item"><a href="/about.html"><i class="info icon"></i> About</a></div>
+
+      <div class="item"><a  href="http://twitter.com/yellowen_inc"><i class="large twitter sign icon"></i>Follow us on Twitter</a></div>
+      <div class="item"><a  href="http://github.com/Yellowen"><i class="large github icon"></i>Follow us on Github</a></div>
+      <div class="item"><a  href="https://www.facebook.com/pages/Yellowen/458403417555149"><i class="large facebook sign icon"></i>Follow us on Facebook</a></div>
+      <div class="item"><a  href="https://plus.google.com/111657470867193917051"><i class="large google plus sign icon"></i>Follow us on Google+</a></div>
+      <div class="item"><a class="toggle button mobile" href="#"><i class="large remove icon"></i> Close</a></div>
+    </div>
+
+    <div class="ui computer  tablet only grid">
+      <div class="ui fluid small inverted menu">
+        <a href="/" class="item"><i class="home icon"></i> Home</a>
+
+        <a href="#" class="toggle button computer item"><i class="reorder icon"></i> Categories</a>
+        <a href="/authors" class="item"><i class="users icon"></i> Authors</a>
+        <a href="/about.html" class="item"><i class="info icon"></i> About</a>
+
+        <div class="ui dropdown item">
+          Follow us <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="http://twitter.com/yellowen_inc"><i class="twitter sign icon"></i> Twitter</a>
+            <a class="item" href="http://github.com/Yellowen"><i class="github icon"></i> Github</a>
+            <a class="item" href="https://www.facebook.com/pages/Yellowen/458403417555149"><i class="facebook sign icon"></i> Facebook</a>
+            <a class="item" href="https://plus.google.com/111657470867193917051"><i class="google plus sign icon"></i> Google+</a>
+          </div>
+        </div>
+        <div class="right menu">
+          <a class="item" href="/feed/feed.xml"><i class="rss icon"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui mobile only grid">
+      <div class="ui fluid small inverted menu">
+        <a href="#" class="toggle button mobile item"><i class="reorder icon"></i></a>
+        <div class="right menu">
+          <a class="item" href="/feed/feed.xml"><i class="rss icon"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="ui one column page grid maincontainer">
+      <div class="column">
+        <div class="row">
+          <div class="stackable ui grid">
+            <div class="column">
+              
+<div class="post row">
+  <div class="ui teal top attached segment">
+    <br class="mobile only"/>
+    <h1 class="post-title"><a href="">Paperclip</a></h1>
+    <div class="ui teal top right attached  label"><i class="large time icon"></i>17 Jan 2013</div>
+
+    <div class="post">
+      <p>If you are a <a href="http://rubyonrails.org/">Rails</a> guru, you already are familiar with <a href="https://github.com/thoughtbot/paperclip">Paperclip</a>.
+But if you&#39;re not, you gonna love this.</p>
+
+<p><a href="https://github.com/thoughtbot/paperclip">Paperclip</a> is a wonderful gem which provide an easy file attachment support to <strong>Active Record</strong>.
+Its very easy to use, flexible and well documented with lots of interesting features likes image processing (cropping, resizing, make
+thumbnails and pretty much what ever <a href="http://www.imagemagick.org/">Imagemagick</a> can do), video processing and storage backends (file, S3,
+dropbox etc). Take a look at <a href="https://github.com/thoughtbot/paperclip/wiki">wiki</a> page of Paperclips for more details on features.</p>
+
+<p>It only took about 5 minutes for me to deploy <strong>Paperclip</strong> in my project. It really made working with attachments and images very easy. Kudos to
+people behind this awesome gem who done hell of a job.</p>
+
+    </div>
+
+    <div class="ui grid">
+      <div class="right aligned row">
+        <div class="column">
+          <div class="ui tiny orange labeled icon top right pointing dropdown button">
+            <i class="share icon"></i>
+            <span class="text">Share</span>
+            <div class="menu">
+              <div class="item"><a href="https://twitter.com/intent/tweet?source=Yellowen_inc&text=Paperclip&url=http%3A%2F%2Fblog.yellowen.com%2Fruby%2Frails%2F2013%2F01%2F17%2Fpaperclip.html" class=""><i class="large twitter sign icon"></i> Twitter</a></div>
+              <div class="item"><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fblog.yellowen.com%2Fruby%2Frails%2F2013%2F01%2F17%2Fpaperclip.html&t=Paperclip" class=""><i class="large facebook sign icon"></i> Facebook</a></div>
+              <div class="item"><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fblog.yellowen.com%2Fruby%2Frails%2F2013%2F01%2F17%2Fpaperclip.html&title=Paperclip&summary=Paperclip+another+awesome+gem+for+managing+media&source=Yellowen+Blog" class=""><i class="large linkedin sign icon"></i> Linkedin</a></div>
+              <div class="item"><a href="https://plus.google.com/share?text=Paperclip&url=http%3A%2F%2Fblog.yellowen.com%2Fruby%2Frails%2F2013%2F01%2F17%2Fpaperclip.html" class=""><i class="large google plus sign icon"></i> Google+</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui bottom attached black inverted segment">
+    <div class="ui two column grid">
+      <div class="column fsegment">
+        <i class="block layout icon" title="Categories"></i> <a class="invert-link" href="/categories/ruby">Ruby</a> <a class="invert-link" href="/categories/rails">Rails</a> 
+
+      </div>
+      <div class="right aligned column fsegment">
+        <i class="tags icon" title="Tags"></i>  <a class="invert-link" href="/tags/Gems">Gems</a> 
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<br />
+<div class="row author">
+  <div class="ui orange segment">
+    <h1><img class="ui mini circular image" src="http://www.gravatar.com/avatar/db856541c0bd4ee8a4cd4071fc52c60b" title="Behnam Ahmad Khan Beigi" style="display: inline;"> yottanami</h1>
+    <div class="ui top right attached orange  label">About Author</div>
+    <p><p>Behnam AhmadKhanBeigi is known as <strong>yottanami</strong> on web. Starts to work as web developer since 2001. He is enjoying software development with Python, Ruby and JavaScript. Trainer and speaker of FreeSoftware and GNU/Linux. He works at <a href="http://www.yellowen.com">Yellowen</a> as senior developer. Fan of FreeSoftware, GNU, Linux, Muisc ...</p>
+</p>
+    <div class="ui two column grid">
+      <div class="row">
+
+        <div class="column">
+          
+        </div>
+
+        <div class="right aligned column">
+          
+          <a href="http://yottanami.com"><i class="large globe icon"></i></a>
+          
+          
+          <a href="http://twitter.com/yottanami"><i class="large twitter icon"></i></a>
+          
+          
+          <a href="http://github.com/yottanami"><i class="large github icon"></i></a>
+          
+          
+          <a href="http://ir.linkedin.com/pub/behnam-ahmad-khan-beigi/55/930/857/"><i class="large linkedin icon"></i></a>
+          
+    </div></div></div>
+  </div>
+</div>
+
+<br /><br />
+<div class="row comment">
+  <div class="ui segment">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'yellowenblog'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="ui two column page grid">
+        <div class="row">
+          <div class="column left aligned">
+            <span>© 2012-2014 <a class="invert" href="http://www.yellowen.com">Yellowen Inc</a></span>
+          </div>
+          <div class="column right aligned">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37099840-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/semantic-ui/transition.js"></script>
+    <script type="text/javascript" src="/javascripts/semantic-ui/dropdown.js"></script>
+    <script type="text/javascript" src="/javascripts/semantic-ui/sidebar.js"></script>
+
+    <script>
+      $(".ui.dropdown").dropdown();
+      $(".ui.computer.sidebar").sidebar('attach events', '.toggle.button.computer');
+      $(".ui.mobile.sidebar").sidebar({overlay: true}).sidebar('attach events', '.toggle.button.mobile');
+
+    </script>
+  </body>
+</html>
