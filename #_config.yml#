@@ -1,0 +1,43 @@
+name: Yellowen Blog
+markdown: redcarpet
+pygments: true
+url: http://blog.yellowen.com
+description: A publication about business, design, programming, writing, and the web by Yellowen people.
+copyright: copyright 2013-2014 Yellowen Inc
+rss_path: /feedb
+paginate: 10
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile']
+
+authors:
+  lxsameer:
+    name: Sameer Rahmani
+    display_name: lxsameer
+    gravatar: c
+    email: lxsameer@gnu.org
+    web: http://www.lxsameer.com
+    twitter: lxsameer
+    github: lxsameer
+    color: green
+    linkedin: ir.linkedin.com/pub/sameer-rahmani/54/407/423/
+    ohloh: "<a href='https://www.ohloh.net/accounts/35021?ref=Tiny' target='_blank'><img alt='Ohloh profile for Sameer Rahmani' border='0' height='15' src='https://www.ohloh.net/accounts/35021/widgets/account_tiny.gif' width='80' /></a>"
+    about: A Bad-ass developer who loves programming and enjoy learning new stuff. He is a senior developer in [Yellowen](http://Yellowen.com) and manage some of the **Yellowen** free software projects. He enjoys software development, Electronics, Training Kyokushin Karate and play music.
+  yottanami:
+    name: Behnam Ahmad Khan Beigi
+    display_name: yottanami
+    gravatar: c
+    email: yottanami@gnu.org
+    web: http://yottanami.com
+    twitter: yottanami
+    github: yottanami
+    color: orange
+    linkedin: http://ir.linkedin.com/pub/behnam-ahmad-khan-beigi/55/930/857/
+    about: Behnam AhmadKhanBeigi is known as **yottanami** on web. Starts to work as web developer since 2001. He is enjoying software development with Python, Ruby and JavaScript. Trainer and speaker of FreeSoftware and GNU/Linux. He works at [Yellowen](http://www.yellowen.com) as senior developer. Fan of FreeSoftware, GNU, Linux, Muisc ...
+  shervin:
+    name: Shervin Ara
+    display_name: shervin
+    email: shervin.ara@gmail.com
+    linkedin: http://ir.linkedin.com/pub/shervin-ara/54/8bb/204/
+    github: ShervinAra
+    twitter: ShervinAra
+    color: teal
+    about: He is an IT man since at 2004. He is a former **Yellowen** IT professional who works at **BAT** right now. Trainer and speaker of FreeSoftware and GNU/Linux. A big fan of FreeSoftware, GNU, Linux, Python, Muisc and etc.
